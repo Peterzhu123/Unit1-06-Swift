@@ -1,0 +1,14 @@
+//
+// Created by: Peter Zhu
+// Created on: Jan 2018
+// This program about random number between 0 and maxValue
+
+import Foundation
+
+func RollDie(maxValue :Int) {
+    let number = Int(arc4random_uniform(UInt32(maxValue)))
+    print("Your number is : \(maxValue)")
+    print("The random number is :\(number)")
+}
+
+print(RollDie(maxValue: 30))
